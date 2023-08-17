@@ -3,7 +3,7 @@ close all
 clc
 
 %%
-im = imread('image_0002.png');
+im = imread(' '); % adding the image like image_0002.png
 
 R = double(im(:,:,1));
 G = double(im(:,:,2));
