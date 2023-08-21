@@ -1,6 +1,6 @@
 function [Y,X,im] = bluePointExtraction(inputPar)
-%UNTITLED Summary of this function goes here
-%   Detailed explanation goes here
+% Detailed explanation goes here
+
 if ischar(inputPar)
     im=imread(inputPar);
 else
