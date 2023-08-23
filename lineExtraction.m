@@ -13,7 +13,7 @@ end
 
 %%[Y,X] = find(fileName == 255);
 
-[coeff, score] = pca([X Y]);
+[coeff, score] = pca([X Y]); % calculate the direction vector of the line that best fits the blue pixels.
 
 normal = coeff(:, 2);
 
