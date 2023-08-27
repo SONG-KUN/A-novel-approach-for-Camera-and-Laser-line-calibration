@@ -3,7 +3,7 @@ close all
 clc
 
 %%
-im = imread('./images/image_test.png');
+im = imread('.calibrationCameraLaserImages/test2.png');
 
 R = double(im(:,:,1));
 G = double(im(:,:,2));
@@ -14,4 +14,5 @@ G = G(:);
 B = B(:);
 
 [Y,X,imm] = bluePointExtraction(im);
+
 param = lineExtraction(im);
