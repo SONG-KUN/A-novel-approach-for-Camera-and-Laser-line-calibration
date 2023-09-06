@@ -16,3 +16,6 @@ B = B(:);
 [Y,X,imm] = bluePointExtraction(im);
 
 param = lineExtraction(im);
+
+%% plot
+showReprojectionErrors(cameraParams);
