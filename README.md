@@ -2,4 +2,4 @@
 
 This repository is based on the above article.
 
-Usage: Run main.m in Matlab.
+<!--Usage: Run main.m in Matlab. -->
