@@ -38,3 +38,5 @@ showReprojectionErrors(cameraParams);
 
 figure;
 showExtrinsics(cameraParams);
+
+%%
