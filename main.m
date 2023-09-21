@@ -17,5 +17,20 @@ B = B(:);
 
 param = lineExtraction(im);
 
+%% get the intrinsic parameters
+images = imageSet('./cameraIntrinsic/intrinsic_imageSet');
+
+imageFileNames = images.ImageLocation;
+
+[imagePoints, boardSize] = detectCheckerboardPoints(imageFileNames);
+
+squareSizeInMM = 60;
+worldPoints = generateCheckerboardPoints(boardSize,squareSizeInMM);
+
+I = readimage(images,1); 
+imageSize = [size(I, 1),size(I, 2)];
+cameraParams = estimateCameraParameters(imagePoints,worldPoints, ...
+                                  'ImageSize',imageSize);  
+
 %% plot
 showReprojectionErrors(cameraParams);
