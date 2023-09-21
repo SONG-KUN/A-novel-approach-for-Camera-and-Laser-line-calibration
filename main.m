@@ -33,7 +33,7 @@ cameraParams = estimateCameraParameters(imagePoints,worldPoints, ...
                                   'ImageSize',imageSize);  
 
 %% plot
-figure
+figure;
 showReprojectionErrors(cameraParams);
 
 figure;
